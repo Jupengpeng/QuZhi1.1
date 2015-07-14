@@ -1,0 +1,19 @@
+//
+//  DetailViewController.h
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-7-6.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#import "BaseViewController.h"
+
+
+
+@interface StoryDetailViewController : BaseViewController
+
+@property (nonatomic) int storyId; ;
+@property (nonatomic) int myRow ;
+@property (nonatomic,strong) NSArray * dataArr;
+
+@end

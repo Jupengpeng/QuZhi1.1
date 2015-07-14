@@ -1,0 +1,19 @@
+//
+//  NoPicStoryCell.h
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-7-2.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "StoryModel.h"
+@interface NoPicStoryCell : UITableViewCell
+{
+    UILabel * _descLabel;
+}
+
+@property (nonatomic,strong) UILabel * descLabel;
+
+- (void)showDataWithModel:(StoryModel *)model;
+@end

@@ -1,0 +1,23 @@
+//
+//  Knowlege-Prefix.pch
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-7-1.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#ifndef KnowledgeAndWisdom_Knowlege_Prefix_pch
+#define KnowledgeAndWisdom_Knowlege_Prefix_pch
+
+
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//放在预编译文件 这样其他文件就不用导入了
+#import "Define.h"
+
+#endif
+
+#endif

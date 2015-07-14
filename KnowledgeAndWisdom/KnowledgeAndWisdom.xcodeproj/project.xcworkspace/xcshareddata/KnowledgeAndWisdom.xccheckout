@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FFA921B1-D387-429B-86F9-3A4A978985A6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KnowledgeAndWisdom</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1f9e3b67-f9e3-4610-b41d-dd1619075095++3564</key>
+		<string>svn://10.8.154.217/zz1505svn/6/Jupopong's%25252525252525252525252525252525252525252525252525252520Project/KnowledgeAndWisdom</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KnowledgeAndWisdom.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1f9e3b67-f9e3-4610-b41d-dd1619075095++3564</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>1f9e3b67-f9e3-4610-b41d-dd1619075095++3564</key>
+		<string>svn://10.8.154.217</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://10.8.154.217/zz1505svn/6/Jupopong's%25252525252525252525252525252525252525252525252525252520Project/KnowledgeAndWisdom/KnowledgeAndWisdom.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1f9e3b67-f9e3-4610-b41d-dd1619075095++3564</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1f9e3b67-f9e3-4610-b41d-dd1619075095++3564</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KnowledgeAndWisdom</string>
+		</dict>
+	</array>
+</dict>
+</plist>

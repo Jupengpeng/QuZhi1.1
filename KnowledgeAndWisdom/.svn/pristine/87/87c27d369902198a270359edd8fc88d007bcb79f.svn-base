@@ -1,0 +1,38 @@
+//
+//  NewsViewController.h
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-6-30.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#import "BaseViewController.h"
+#import "PicStoryCell.h"
+#import "StoryModel.h"
+#import "AFNetworking.h"
+#import "PicStoryCell.h"
+#import "NoPicStoryCell.h"
+#import "NewsModel.h"
+#import "Top_storiesModel.h"
+#import "UIButton+WebCache.h"
+#import "JHRefresh.h"
+#import "LZXHelper.h"
+#import "StoryDetailViewController.h"
+@interface NewsViewController : BaseViewController
+{
+    
+    AFHTTPRequestOperationManager * _manager;
+    NSMutableArray * _dataArr;
+    UITableView * _tableView;
+}
+@property (nonatomic,strong) NSMutableArray * dataArr;
+@property (nonatomic,strong) UITableView * tableView;
+@property (nonatomic) BOOL isRefreshing;
+@property (nonatomic) BOOL isLoadMore;
+@property (nonatomic,copy) NSString * url;
+@property (nonatomic) int urlId;
+@property (nonatomic)NSInteger currentPage ;
+-(void)addTaskWithUrl:(NSString*)url isRefresh:(BOOL)isRefreshing;
+-(void)ceateRefreshView;
+
+@end

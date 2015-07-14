@@ -1,0 +1,29 @@
+//
+//  NewsModel.h
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-7-6.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#import "BaseModel.h"
+
+@interface NewsModel : BaseModel
+
+@property (nonatomic,copy) NSString *description;
+@property (nonatomic,copy) NSString *background;
+@property (nonatomic,copy) NSString * image;
+@property (nonatomic,strong) NSArray *  stories;
+@property (nonatomic,strong) NSArray * editors;
+@property (nonatomic,copy) NSString * name;
+
+//stories
+//description"了解自己和别人，了解彼此的欲望和局限。"
+//background"http://pic2.zhimg.com/71c8bcd3d99958de45ed87b8fc213224.jpg"
+//color15007
+//name"日常心理学"
+//image"http://pic4.zhimg.com/60b69ef145a472f2c6b5302453f95eaa.jpg"
+//editors
+//image_source""
+
+@end

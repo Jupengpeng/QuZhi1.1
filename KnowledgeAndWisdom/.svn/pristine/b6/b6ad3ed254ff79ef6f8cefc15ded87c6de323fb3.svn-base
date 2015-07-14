@@ -1,0 +1,164 @@
+//
+//  Define.h
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-7-1.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#ifndef KnowledgeAndWisdom_Define_h
+#define KnowledgeAndWisdom_Define_h
+
+#define kScreenSize [UIScreen mainScreen].bounds.size
+
+
+
+//今日热闹接口：
+//http://news-at.zhihu.com/api/4/stories/latest?client=0
+#define kFirstScrollUrl @"http://news-at.zhihu.com/api/4/stories/latest?client=0"
+
+//%@是日期
+//http://news-at.zhihu.com/api/4/stories/before/20150628?client=0
+#define kFirstPageUrl @"http://news-at.zhihu.com/api/4/stories/before/%@?client=0"
+
+#define kDate @"20150703"
+
+//进入界面图片接口：
+//http://news-at.zhihu.com/api/4/start-image/640*960?client=0
+//%@为屏幕分辨率
+#define kCover @"http://news-at.zhihu.com/api/4/start-image/%@?client=0"
+
+
+
+//提示登录接口：
+//http://news-at.zhihu.com/api/4/notifications/count
+
+//新闻分类描述
+//http://news-at.zhihu.com/api/4/themes
+#define kTypeUrl @"http://news-at.zhihu.com/api/4/themes"
+//今日热闹详情页
+//http://news-at.zhihu.com/api/4/story/4831703
+//%d为id
+#define kStoryDetailUrl @"http://daily.zhihu.com/story/%d"
+
+//今日热闹详情页评论个数
+//http://news-at.zhihu.com/api/4/story-extra/4831703
+
+#define kcommentsCountUrl @"http://news-at.zhihu.com/api/4/story-extra/%d"
+
+//新闻通用接口
+#define kNewsUrl @"http://news-at.zhihu.com/api/4/theme/%d"
+//以前的新闻通用接口
+#define kNewsBeforeUrl @"http://news-at.zhihu.com/api/4/theme/%d/before/%d"
+
+
+//日常心理学界面 %d = 13
+#define DailyId 13
+//电影日报界面%d = 3
+#define MovieId 3
+//用户推荐日报学界面%d =12
+#define UserRecId 12
+//不许无聊界面%d =11
+#define InterestingId 11
+//设计日报界面%d =4
+#define DesignId 4
+//大公司日报界面%d =5
+#define CompanyId 5
+//财经日报界面%d =6
+#define FinanceId 6
+//互联网安全%d =10
+#define InternetId 10
+//开始游戏%d =9
+#define GameId 9
+//音乐日报%d =7
+#define MusicId 7
+//动漫日报%d 1
+#define AnimationId 2
+//体育日报%d =8
+#define SportsId 8
+
+
+
+//国家地理
+//主页接口
+//
+//http://dili.bdatu.com/jiekou/main/p1.html
+#define PicHomeUrl @"http://dili.bdatu.com/jiekou/main/p1.html"
+//详情
+//http://dili.bdatu.com/jiekou/album/a871.html
+
+#define PicDetailUrl @"http://dili.bdatu.com/jiekou/album/a871.html"
+
+//第二界面起始页
+//http://news-at.zhihu.com/api/4/theme/13
+//
+//before/最后一个的ID
+//http://news-at.zhihu.com/api/4/theme/13/before/4664946
+//http://news-at.zhihu.com/api/4/theme/13/before/%d
+//%d为id值
+//
+////日常心理学详情页
+////http://news-at.zhihu.com/api/4/story/%d
+//
+//
+//
+//用户推荐日报学界面
+//http://news-at.zhihu.com/api/4/theme/12
+//最后一个的id %d
+//http://news-at.zhihu.com/api/4/theme/12/before/%d
+//
+//电影日报界面
+//
+//http://news-at.zhihu.com/api/4/theme/3
+//
+//http://news-at.zhihu.com/api/4/theme/3/before/%d
+//
+//
+//不许无聊界面
+//http://news-at.zhihu.com/api/4/theme/11
+//
+//
+//设计日报界面
+//http://news-at.zhihu.com/api/4/theme/4
+//
+//大公司日报界面
+//
+//http://news-at.zhihu.com/api/4/theme/5
+//
+//财经日报界面
+//http://news-at.zhihu.com/api/4/theme/6
+//互联网安全
+//http://news-at.zhihu.com/api/4/theme/10
+//开始游戏
+//http://news-at.zhihu.com/api/4/theme/2
+//音乐日报
+//http://news-at.zhihu.com/api/4/theme/7
+//动漫日报
+//http://news-at.zhihu.com/api/4/theme/9
+//
+//上方图片
+//http://p3.zhimg.com/f0/c2/f0c253357d99fb72fdb16543ad93ca0c.jpg
+//
+//
+//体育日报
+//http://news-at.zhihu.com/api/4/theme/8
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//POST
+//点赞接口
+//http://news-at.zhihu.com/api/4/vote/stories
+//
+//我的微博跳转
+//http://api.weibo.cn/2/users/show?skin=default&c=iphone&from=1053093010&ua=iPhone3,1__weibo__5.3.0__iphone__os7.1.2&v_p=21&v_f=1&i=bd84df3&wm=3333_2001&lang=zh_CN&b=1&sourcetype=&gsid=_2A254lgcbDeTxGeRK7FUZ-S3Lzz-IHXVZAh3TrDV6PUJbrdAKLWX3kWpiwOYmufzlLvmymE-Zmrt8scuWjw..&has_profile=1&has_extend=1&uid=2477893743&s=bb4c4ed7
+//
+//
+//根视图控制器 跳转
+//self.view.window  present…
+
+#ifndef __UpLine__
+//变参宏
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+#endif

@@ -1,0 +1,77 @@
+//
+//  ContainerViewController.m
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-7-5.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#import "ContainerViewController.h"
+
+#import "SCNavTabBarController.h"
+
+#import "OneViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "FourthViewController.h"
+#import "FifthViewController.h"
+#import "SIxthViewController.h"
+#import "SeventhViewController.h"
+#import "EightViewController.h"
+#import "NinethViewController.h"
+#import "TenthViewController.h"
+#import "ElevenViewController.h"
+#import "TwelveViewController.h"
+
+@interface ContainerViewController ()
+{
+    
+    SCNavTabBarController * _container;
+}
+@end
+
+@implementation ContainerViewController
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden =YES;
+    [self.tabBarController.tabBar setHidden:NO];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    NSMutableArray * viewControllers = [[NSMutableArray alloc]init];
+    NSArray * controllerNames = [[NSArray alloc]initWithObjects:@"OneViewController",@"SecondViewController",@"ThirdViewController",@"FourthViewController",@"FifthViewController",@"SIxthViewController",@"SeventhViewController",@"EightViewController",@"NinethViewController",@"TenthViewController",@"ElevenViewController",@"TwelveViewController", nil];
+    NSArray * titleArray = [NSArray arrayWithObjects:@"不许无聊",@"用户推荐",@"每日心情",@"体育资讯",@"金融日报",@"电影有话",@"音乐鉴赏",@"设计物语",@"巨头传奇",@"网络科技",@"开始游戏",@"二次元控",nil];
+    NSArray * controllerIds = @[@InterestingId,@UserRecId,@DailyId,@SportsId,@FinanceId,@MovieId, @MusicId,@DesignId,@CompanyId ,@InternetId,@AnimationId,@GameId];
+                               
+
+    
+    for (int i = 0 ; i < titleArray.count; i ++) {
+        
+        Class cls = NSClassFromString(controllerNames[i]);
+        NewsViewController * controller= [[cls alloc]init];
+        controller.urlId = [controllerIds[i] intValue];
+        controller.url = [NSString stringWithFormat:kNewsUrl,[controllerIds[i] intValue]];
+        controller.title = titleArray[i];
+        [viewControllers addObject:controller];
+    }
+    
+    
+    _container =  [[SCNavTabBarController alloc]init];
+    _container.subViewControllers = viewControllers;
+    _container.mainViewBounces = YES;
+    _container.showArrowButton = YES;
+    _container.navTabBarColor = myBlue;
+    _container.navTabBarLineColor = [UIColor whiteColor];
+    [_container addParentController:self];
+
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+@end

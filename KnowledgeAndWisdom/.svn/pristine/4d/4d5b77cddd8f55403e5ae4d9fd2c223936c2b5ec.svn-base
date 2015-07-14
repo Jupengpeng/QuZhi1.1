@@ -1,0 +1,36 @@
+//
+//  NoPicStoryCell.m
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-7-2.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#import "NoPicStoryCell.h"
+
+@implementation NoPicStoryCell
+
+- (void)awakeFromNib {
+    [self initUI];
+}
+-(void)initUI{
+    self.descLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, kScreenSize.width-20, (kScreenSize.height-60)/5)];
+    self.descLabel.layer.cornerRadius  = 5;
+    self.descLabel.numberOfLines = 0;
+    
+    [self addSubview:self.descLabel];
+    
+    
+}
+- (void)showDataWithModel:(StoryModel *)model{
+    
+    
+    
+}
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end

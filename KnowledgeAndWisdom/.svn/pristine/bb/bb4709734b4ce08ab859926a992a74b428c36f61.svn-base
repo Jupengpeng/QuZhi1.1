@@ -1,0 +1,27 @@
+//
+//  PicturesViewControllersViewController.m
+//  KnowledgeAndWisdom
+//
+//  Created by qianfeng on 15-7-6.
+//  Copyright (c) 2015年 JP. All rights reserved.
+//
+
+#import "PicturesViewControllersViewController.h"
+
+@interface PicturesViewControllersViewController ()
+
+@end
+
+@implementation PicturesViewControllersViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+
+
+@end
